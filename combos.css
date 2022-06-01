@@ -4,6 +4,69 @@ body {
   font-size: 20px;
   }
   
+  header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(78, 18, 134);
+    transform: rotate(-5deg);
+    margin-bottom: 30px;
+    animation: changeColor 5s linear 0.5s infinite normal forwards running;
+  }
+  
+  @keyframes changeColor{
+    0% {background-color: rgb(71, 71, 197);}
+    50% {background-color: rgb(78, 18, 134);}
+    100% {background-color: rgb(71, 71, 197);}
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  
+  @media only screen and (max-width:768px){
+
+    header {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: rgb(78, 18, 134);
+      transform: rotate(0deg);
+    }
+  
+  }
+  
+  @media only screen and (min-width:2700px){
+  
+    header {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: rgb(78, 18, 134);
+      transform: rotate(0deg);
+    }
+  
+  }
+   
+  
+  @media only screen and (max-width:768px){
+  
+    footer {
+      background-color: rgb(78, 18, 134);
+    }
+  
+  }
+  
+  section {
+    background-color: rgb(103, 28, 173);
+  }
+  
+  article {
+    font-weight:bold;
+    font-size: larger;
+  }
+
+
   .box {
     display: flex;
     justify-content: center;
@@ -24,11 +87,6 @@ body {
     background-color: rgb(78, 18, 134);
   }
   
-  h1 {
-    font-family: 'Tiro Bangla', serif;
-    background-color: rgb(78, 18, 134);
-    transform: rotate(-5deg);
-  }
 
   h2 {
 

@@ -1,10 +1,25 @@
 body {
   background-color: rgb(72, 4, 88);
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
 }
 
-.box {
+header{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(78, 18, 134);
+  transform: rotate(-5deg);
+  margin-bottom: 30px;
+  animation: changeColor 5s linear 0.5s infinite normal forwards running;
+}
+
+@keyframes changeColor{
+  0% {background-color: rgb(71, 71, 197);}
+  50% {background-color: rgb(78, 18, 134);}
+  100% {background-color: rgb(71, 71, 197);}
+  
+}
+
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,22 +28,70 @@ font-size: 20px;
   align-self: center;
 }
 
-.img{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+
+@media only screen and (max-width:768px){
+
+  header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(78, 18, 134);
+    transform: rotate(0deg);
+  }
+
 }
 
-.pr{
+@media only screen and (min-width:2700px){
+
+  header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(78, 18, 134);
+    transform: rotate(0deg);
+  }
+
+}
+
+
+
+
+@media only screen and (min-width:320px){
+
+  footer {
+    background-color: rgb(78, 18, 134);
+  }
+
+}
+
+section {
   width: 50%;
   background-color: rgb(78, 18, 134);
 }
 
-h1 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: rgb(78, 18, 134);
-  transform: rotate(-5deg);
+article {
+  font-weight:bold;
+  font-size: larger;
 }
+
+footer{
+  border-style:inset;
+  font-weight: bold;
+}
+
+  .img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+@media only screen and (max-width: 320px){
+  .img{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap:wrap;
+    flex-direction: column;
+  }
+}
+
 
 .one {
   background-color: rgb(116, 112, 112);
